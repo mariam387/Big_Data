@@ -1,5 +1,5 @@
 # Big Data
-'''  
+```  
 │
 ├── Postlab 1
 │ └── Lab5_Spark_II.ipynb
@@ -17,7 +17,7 @@
 ├── commands.txt
 ├── docker-compose.yaml
 └── entrypoint.sh
-'''  
+```  
 
 ## Description
 This repository is a comprehensive collection of labs, postlabs, and a full project environment designed for practical learning and development in Big Data processing using **Apache Spark** and **Hadoop Distributed File System (HDFS)**.
