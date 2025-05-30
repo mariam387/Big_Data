@@ -43,11 +43,5 @@ This setup enables a realistic simulation of distributed data processing pipelin
 2. Open the Jupyter notebooks (`Lab5_Spark_II.ipynb` or `Post_lab2.ipynb`) using JupyterLab or Jupyter Notebook.
 3. Follow the instructions within the notebooks to perform Spark data processing exercises, explore Spark APIs, and analyze sample datasets.
 
-### Setting Up the Project Environment
-
-1. Ensure you have **Docker** and **Docker Compose** installed and running on your machine.
-2. Navigate to the project folder:
-   ```bash
-   cd project/hdfs-spark
 
 
