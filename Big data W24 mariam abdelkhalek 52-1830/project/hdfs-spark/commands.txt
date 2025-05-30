@@ -1,0 +1,21 @@
+#make directory and docker compose up
+mkdir big_data_project
+cd big_data_project/hdfs-spark
+docker compose up --build -d
+
+#copying files from folder notebook and putting it on hdfs namenode
+cd big_data_project/hdfs-spark/notebook
+docker cp shoes.csv namenode-master:/
+docker exec -it namenode-master bash
+hdfs dfs -put -f /shoes.csv hdfs://namenode-master:8020/
+docker cp accessories.csv namenode-master:/
+docker exec -it namenode-master bash
+hdfs dfs -put -f /accessories.csv hdfs://namenode-master:8020/
+docker cp jewelry.csv namenode-master:/
+docker exec -it namenode-master bash
+hdfs dfs -put -f /jewelry.csv hdfs://namenode-master:8020/
+
+#jupyter tokenization
+cd ~/big_data_project/hdfs-spark
+docker ps
+big_data_project/hdfs-spark
